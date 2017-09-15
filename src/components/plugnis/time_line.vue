@@ -39,7 +39,9 @@
 
 <style lang="less">
 	.time_line {
+		overflow: hidden;
 		.time {
+			
 			position: relative;
 			.line {
 				width: 10px;
@@ -58,9 +60,10 @@
 					height: 35px;
 					background-color: #ccc;
 				}
-				&:last-child::after{
-					top: 0px;
-				}
+				
+			}
+			.line:last-child{
+				&::after{content: none;}
 			}
 			.content {
 				margin-top: 20px;
