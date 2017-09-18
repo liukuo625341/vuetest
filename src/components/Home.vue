@@ -2,6 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/plugins/timeLine">to plugins</router-link>
+    <br />
+    <router-link to="/es6/number">to es6</router-link>
   </div>
 </template>
 
