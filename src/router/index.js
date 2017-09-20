@@ -4,11 +4,12 @@ import Home from '@/components/home'
 import Plugins from '@/components/plugins.vue'//插件入口
 import Es6 from '@/components/es6.vue'//es6入口
 import timeLine from '@/components/plugnis/time_line'//插件时间线
-import Nexts from '@/components/plugnis/next'//下一个插件
+import keyValue from '@/components/plugnis/key-value'//下一个插件
 import Number from '@/components/es6/number'//es6数值的扩展
 Vue.use(Router)
 
 export default new Router({
+	mode:'history',
 	routes: [{
 			path: '/',
 			name: '插件',
@@ -23,9 +24,9 @@ export default new Router({
 				name: '时间线',
 				component: timeLine
 			},{
-				path: 'nexts',
-				name: '下一个',
-				component: Nexts
+				path: 'keyValue',
+				name: '对象拆分成key,value数组',
+				component: keyValue
 			}]
 		},
 		{

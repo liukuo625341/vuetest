@@ -10,9 +10,7 @@
 			</div>
 
 		</div>
-		<div v-for="(item,key,index) in id">{{key}}
-			<input type="" name=""  v-model="index" />
-		</div>
+		
 		
 	</div>
 </template>
@@ -36,28 +34,11 @@
 						value: '娑娜'
 					}
 				],
-				id: {
-					name: '1',
-					list: '2',
-					value: '3'
-				},
-				array: [],
-				array1: [],
-				array2: []
+				
 			}
 		},
 		mounted() {
-			this.array = Object.keys(this.id)
-			this.array2 = Object.values(this.id)
-			this.array1 = this.array.map(res => {
-				return {}
-			}).map((res, index) => {
-				return res = {
-					key: this.array[index],
-					value: this.array2[index]
-				}
-			})
-			console.log(this.array1)
+			
 		}
 	}
 </script>
