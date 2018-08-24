@@ -10,15 +10,17 @@
 			</div>
 
 		</div>
-		
+		<el-input v-model="value"></el-input>
 		
 	</div>
 </template>
 
 <script>
 	export default {
+		name:'time',
 		data() {
 			return {
+				value:1,
 				data: [{
 						key: 'EZ',
 						value: '伊泽瑞尔'
@@ -37,8 +39,15 @@
 				
 			}
 		},
+		  activated () {
+      console.log(this.$options)
+	},
+	  deactivated() {
+      console.log(4)
+    },
 		mounted() {
-			
+			console.log(12312321)
+			console.log(this.$options.name)
 		}
 	}
 </script>

@@ -3,7 +3,7 @@
 		<div>原对象:{{id}}</div>
 		<div class="key-value">拆分对象后数组:{{array1}}</div>
 		<div class="value">
-			<div v-for="item in array1" key="item.key" class="">
+			<div v-for="item in array1" :key="item.key" >
 			<div class="div_inline">{{item.key }}:</div><el-input v-model="item.value" class="input"></el-input>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 					value: this.array2[index]
 				}
 			})
-			console.log(this.array1)
+		
 		}
 	}
 </script>
